@@ -16,6 +16,20 @@ public class Proyecto_Ludo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Tablero t = new Tablero();
+        Ficha ficha = new Ficha();
+        jugador j = new jugador();
+        
+        System.out.println(j.moverficha(6, j.f1));
+        System.out.println(j.moverficha(6, j.f1));
+        System.out.println(j.moverficha(6, j.f1));
+        System.out.println(j.moverficha(6, j.f1));
+        System.out.println(j.moverficha(6, j.f1));
+        System.out.println(j.moverficha(6, j.f1));
+        System.out.println(j.moverficha(6, j.f1));
+        System.out.println(j.moverficha(6, j.f1));
+        System.out.println(j.moverficha(6, j.f1));
+        System.out.println(j.moverficha(4, j.f1));
     }
     
 }
