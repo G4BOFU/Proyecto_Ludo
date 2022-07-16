@@ -11,7 +11,7 @@ package proyecto_ludo;
  */
 public class jugador {
     
-    Ficha f;
+    
     Ficha f1 = new Ficha();
     Ficha f2 = new Ficha();
     Ficha f3 = new Ficha();
@@ -34,14 +34,36 @@ public class jugador {
 
     }
 
-    String sacarficha(int dado) {
+    String sacarficha(int dado, Ficha fich) {
 
         if (dado == 6 || dado == 1) {
 
-            return "Has salido, ahora volveras a lanzar para moverte" + this.moverficha(dado, f);
+            return "Has salido, ahora volveras a lanzar para moverte" + this.moverficha(dado, fich);
         }
         return "No has podido salir, has perdido el turno ";
 
+    }
+    
+    
+    boolean finalrecorrido(){
+        return f1.posfinal ==57 && f2.posfinal ==57 && f3.posfinal == 57 && f4.posfinal== 57;
+    
+       
+    }
+    
+    
+    
+    String ganador(){
+        if(finalrecorrido()){
+        
+            return "Has llegado al final, todas tus piezas han logrado llegar a la base! ";
+        
+        }
+        return null;
+    
+    
+    
+    
     }
 
 }
